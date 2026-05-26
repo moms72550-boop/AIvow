@@ -19,15 +19,19 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .hero p { font-size: 18px; color: #9990c8; line-height: 1.7; max-width: 560px; margin: 0 auto 40px; }
 .btn-primary { display: inline-block; background: #7F77DD; color: #fff; padding: 16px 36px; border-radius: 8px; font-size: 16px; font-weight: 500; text-decoration: none; }
 .btn-primary:hover { background: #534AB7; }
-.section { padding: 64px 40px; max-width: 900px; margin: 0 auto; }
+.section { padding: 64px 40px; max-width: 1000px; margin: 0 auto; }
 .section-title { font-size: 32px; font-weight: 600; color: #fff; text-align: center; margin-bottom: 12px; }
 .section-sub { font-size: 16px; color: #9990c8; text-align: center; margin-bottom: 40px; }
 .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
 .feature-card { background: #1a0a2e; border: 0.5px solid rgba(127,119,221,0.3); border-radius: 12px; padding: 24px; }
+.feature-card.shopify { border-color: rgba(149,191,71,0.4); background: linear-gradient(135deg, #1a0a2e 60%, rgba(149,191,71,0.05)); }
 .feature-icon { width: 44px; height: 44px; background: rgba(127,119,221,0.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+.feature-card.shopify .feature-icon { background: rgba(149,191,71,0.15); }
 .feature-icon i { font-size: 22px; color: #7F77DD; }
+.feature-card.shopify .feature-icon i { color: #95bf47; }
 .feature-card h3 { font-size: 15px; font-weight: 500; color: #fff; margin-bottom: 8px; }
 .feature-card p { font-size: 13px; color: #9990c8; line-height: 1.6; }
+.shopify-badge { display: inline-block; background: rgba(149,191,71,0.15); color: #95bf47; font-size: 10px; padding: 2px 8px; border-radius: 10px; border: 0.5px solid rgba(149,191,71,0.4); margin-bottom: 8px; }
 .how { padding: 64px 40px; background: #130820; }
 .how-inner { max-width: 900px; margin: 0 auto; }
 .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 20px; margin-top: 40px; }
@@ -43,6 +47,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .price-features { list-style: none; margin-bottom: 36px; text-align: left; }
 .price-features li { font-size: 15px; color: #AFA9EC; padding: 10px 0; border-bottom: 0.5px solid rgba(127,119,221,0.2); display: flex; align-items: center; gap: 10px; }
 .price-features li i { color: #7F77DD; font-size: 18px; flex-shrink: 0; }
+.price-features li.shopify-feature { color: #95bf47; }
+.price-features li.shopify-feature i { color: #95bf47; }
 .cta-section { background: #1a0a2e; padding: 80px 40px; text-align: center; }
 .cta-section h2 { font-size: 36px; font-weight: 600; color: #fff; margin-bottom: 16px; }
 .cta-section p { font-size: 16px; color: #9990c8; margin-bottom: 36px; max-width: 500px; margin-left: auto; margin-right: auto; }
@@ -55,19 +61,19 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 </style>
 </head>
 <body>
-
+ 
 <nav class="nav">
   <span class="logo">Aivow</span>
   <a href="https://calendly.com/moms72550/30min" class="nav-btn">Réserver un appel gratuit</a>
 </nav>
-
+ 
 <div class="hero">
   <div class="badge">✦ Assistant IA pour e-commerce</div>
   <h1>Votre support client<br><span>automatisé 24h/24</span></h1>
   <p>Vos clients reçoivent une réponse en moins de 10 secondes. Questions produits, suivi de commandes, prise de RDV — tout géré automatiquement.</p>
   <a href="https://calendly.com/moms72550/30min" class="btn-primary">Réserver mon appel gratuit →</a>
 </div>
-
+ 
 <div class="section">
   <p class="section-title">Tout ce que fait votre assistant IA</p>
   <p class="section-sub">Un seul outil, toutes les fonctionnalités dont vous avez besoin</p>
@@ -82,6 +88,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <h3>Suivi de commandes</h3>
       <p>Donne le statut et la date de livraison en temps réel.</p>
     </div>
+    <div class="feature-card shopify">
+      <div class="shopify-badge">● Shopify</div>
+      <div class="feature-icon"><i class="ti ti-refresh"></i></div>
+      <h3>Synchronisation Shopify</h3>
+      <p>Vos commandes Shopify se synchronisent automatiquement. Toujours à jour, sans intervention.</p>
+    </div>
     <div class="feature-card">
       <div class="feature-icon"><i class="ti ti-calendar"></i></div>
       <h3>Prise de RDV</h3>
@@ -94,7 +106,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     </div>
   </div>
 </div>
-
+ 
 <div class="how">
   <div class="how-inner">
     <p class="section-title">Comment ça marche</p>
@@ -113,7 +125,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <div class="step">
         <div class="step-num">3</div>
         <h3>Configuration</h3>
-        <p>Je configure votre assistant personnalisé en 48h</p>
+        <p>Je configure votre assistant et connecte votre Shopify en 48h</p>
       </div>
       <div class="step">
         <div class="step-num">4</div>
@@ -123,18 +135,19 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     </div>
   </div>
 </div>
-
+ 
 <div class="pricing-section">
   <p class="section-title">Une offre simple</p>
   <p class="section-sub">Pas de surprise, pas de contrat longue durée</p>
   <div class="pricing-card">
     <div class="badge">Le plus populaire</div>
-    <div class="price">597€ <span>+ 97€/mois</span></div>
+    <div class="price">797€ <span>+ 127€/mois</span></div>
     <p class="price-sub">Installation unique + maintenance mensuelle</p>
     <ul class="price-features">
-      <li><i class="ti ti-check"></i> Assistant IA sur Telegram 24h/24</li>
+      <li><i class="ti ti-check"></i> Assistant IA disponible 24h/24</li>
       <li><i class="ti ti-check"></i> Base de connaissances personnalisée</li>
-      <li><i class="ti ti-check"></i> Suivi de commandes automatique</li>
+      <li class="shopify-feature"><i class="ti ti-check"></i> Connexion Shopify — commandes synchronisées automatiquement</li>
+      <li><i class="ti ti-check"></i> Suivi de commandes en temps réel</li>
       <li><i class="ti ti-check"></i> Prise de RDV Google Agenda</li>
       <li><i class="ti ti-check"></i> Emails de confirmation automatiques</li>
       <li><i class="ti ti-check"></i> Appel onboarding 30 minutes</li>
@@ -143,16 +156,17 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <a href="https://calendly.com/moms72550/30min" class="btn-primary">Démarrer maintenant →</a>
   </div>
 </div>
-
+ 
 <div class="cta-section">
   <h2>Prêt à automatiser votre support client ?</h2>
   <p>Réservez un appel gratuit de 30 minutes. Je vous montre exactement comment ça fonctionne pour votre boutique.</p>
   <a href="https://calendly.com/moms72550/30min" class="btn-primary">Réserver mon appel gratuit →</a>
 </div>
-
+ 
 <div class="footer">
   <p>© 2026 Aivow — Tous droits réservés</p>
 </div>
-
+ 
 </body>
 </html>
+ 
