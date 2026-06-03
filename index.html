@@ -53,6 +53,22 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .cta-section { background: #1a0a2e; padding: 80px 40px; text-align: center; }
 .cta-section h2 { font-size: 36px; font-weight: 600; color: #fff; margin-bottom: 16px; }
 .cta-section p { font-size: 16px; color: #9990c8; margin-bottom: 36px; max-width: 500px; margin-left: auto; margin-right: auto; }
+.early-section { padding: 64px 40px; background: #130820; }
+.early-inner { max-width: 700px; margin: 0 auto; text-align: center; }
+.early-badge { display: inline-block; background: rgba(245,100,50,0.15); color: #f56432; font-size: 13px; padding: 8px 20px; border-radius: 20px; border: 0.5px solid rgba(245,100,50,0.4); margin-bottom: 24px; }
+.early-cards { display: flex; justify-content: center; gap: 12px; margin: 32px 0; flex-wrap: wrap; }
+.early-card { width: 80px; height: 80px; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; }
+.early-card.taken { background: rgba(127,119,221,0.1); border: 0.5px solid rgba(127,119,221,0.2); }
+.early-card.available { background: rgba(127,119,221,0.2); border: 1px solid #7F77DD; }
+.early-num { font-size: 22px; font-weight: 600; color: #AFA9EC; }
+.early-card.taken .early-num { color: #666; }
+.early-status { font-size: 10px; color: #9990c8; }
+.early-card.taken .early-status { color: #555; text-decoration: line-through; }
+.early-offer { margin-top: 32px; }
+.early-price-old { font-size: 18px; color: #666; text-decoration: line-through; margin-bottom: 8px; }
+.early-price-new { font-size: 48px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+.early-price-new span { font-size: 20px; color: #9990c8; }
+.early-desc { font-size: 14px; color: #9990c8; margin: 16px 0 28px; }
 .footer { padding: 24px 40px; text-align: center; color: #9990c8; font-size: 13px; border-top: 0.5px solid rgba(127,119,221,0.2); }
 @media (max-width: 600px) {
   .hero h1 { font-size: 32px; }
@@ -155,6 +171,42 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <li><i class="ti ti-check"></i> Livraison en 48h</li>
     </ul>
     <a href="https://calendly.com/moms72550/30min" class="btn-primary">Démarrer maintenant →</a>
+  </div>
+</div>
+
+<div class="early-section">
+  <div class="early-inner">
+    <div class="early-badge">🔥 Offre de lancement — Places limitées</div>
+    <p class="section-title">Réduction exclusive pour les 5 premiers clients</p>
+    <p class="section-sub">Soyez parmi les premiers à adopter Aivow et bénéficiez d'un tarif préférentiel</p>
+    <div class="early-cards">
+      <div class="early-card available">
+        <div class="early-num">1</div>
+        <div class="early-status">Disponible</div>
+      </div>
+      <div class="early-card available">
+        <div class="early-num">2</div>
+        <div class="early-status">Disponible</div>
+      </div>
+      <div class="early-card available">
+        <div class="early-num">3</div>
+        <div class="early-status">Disponible</div>
+      </div>
+      <div class="early-card available">
+        <div class="early-num">4</div>
+        <div class="early-status">Disponible</div>
+      </div>
+      <div class="early-card available">
+        <div class="early-num">5</div>
+        <div class="early-status">Disponible</div>
+      </div>
+    </div>
+    <div class="early-offer">
+      <div class="early-price-old">797€ + 127€/mois</div>
+      <div class="early-price-new">497€ <span>+ 97€/mois</span></div>
+      <p class="early-desc">Économisez 300€ sur l'installation + 30€/mois — offre réservée aux 5 premiers clients uniquement</p>
+      <a href="https://calendly.com/moms72550/30min" class="btn-primary">Je profite de l'offre →</a>
+    </div>
   </div>
 </div>
 
